@@ -1378,6 +1378,17 @@ body.light-mode .footer .footer-socials a:hover {
     opacity: 0.98;
     visibility: hidden;
   }
+  body.dark .nav-list {
+    background: var(--card-bg-dark);
+  }
+  body.dark .nav-list a {
+    color: #fff;
+  }
+  body.dark .nav-list a:hover,
+  body.dark .nav-list a:focus {
+    background: #232946;
+    color: #f59e42;
+  }
   .nav-list.open {
     transform: translateX(0);
     visibility: visible;
