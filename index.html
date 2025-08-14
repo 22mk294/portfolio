@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Joel Mike Mukendi</title>
+  <link rel="icon" type="image/png" href="assets/profil.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Remix Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+  <!-- Devicon for programming icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="nav container">
+      <div class="nav-left">
+        <span class="header-profile-pic" id="headerProfilePic" style="display:none;">
+          <img src="assets/profil.png" alt="Joel Mike Mukendi" />
+        </span>
+        <h1 class="logo">Joel Mike Mukendi</h1>
+      </div>
+      <div class="nav-right">
+        <div class="header-lang">
+          <label for="lang-select-header" class="lang-label" style="display:none;">Langue :</label>
+          <span class="lang-flag" id="lang-flag-header">🇫🇷</span>
+          <select id="lang-select-header" aria-label="Choisir la langue">
+            <option value="fr" selected>Français</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+          </select>
+        </div>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Ouvrir le menu" title="Menu">
+          <i class="ri-menu-line"></i>
+        </button>
+        <ul class="nav-list">
+          <li><a href="#profile">Profil</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-switch" aria-label="Changer de thème" title="Changer de thème" class="theme-btn">
+          <i class="ri-moon-line"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- PROFIL TECHNIQUE -->
+  <section id="profile" class="profile-section fade-in">
+  <span class="bg-shape shape1"></span>
+  <span class="bg-shape shape2"></span>
+  <span class="bg-shape shape3"></span>
+    <div class="container profile-block-grid">
+      <div class="profile-text-col">
+        <div class="profile-main-card profile-main-card-under">
+          <div class="profile-name">Joel Mike Mukendi</div>
+          <div class="profile-special">Développeur Full-Stack & Multi-plateformes</div>
+          <div class="profile-desc">Développement full-stack et multi-plateformes (web, mobile, desktop) avec une forte orientation backend, intégration API, et architecture logicielle claire.</div>
+          <button class="btn-stats" onclick="document.getElementById('skills-radar').scrollIntoView({behavior: 'smooth'})">Statistiques compétences</button>
+        </div>
+      </div>
+      <div class="profile-photo-col">
+        <span class="profile-img-wrapper">
+          <img src="assets/profil.png" alt="Joel Mike Mukendi" class="profile-img">
+        </span>
+      </div>
+  </div>
+  </div>
+  </section>
+
+  <!-- SECTION POINTS FORTS / HIGHLIGHTS (déplacée) -->
+  <section id="highlights" class="highlights-section">
+    <div class="container">
+      <ul class="profil-points">
+        <li><i class="ri-checkbox-circle-line"></i> Structuration complète de projet (analyse → conception → implémentation).</li>
+        <li><i class="ri-checkbox-circle-line"></i> Respect de l’architecture MVC.</li>
+        <li><i class="ri-checkbox-circle-line"></i> Projets multi-plateformes réels.</li>
+        <li><i class="ri-checkbox-circle-line"></i> Approche méthodique et progressive.</li>
+      </ul>
+    </div>
+  </section>
+  
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills-section fade-in">
+    <div class="container">
+      <h2 class="section-title">Compétences techniques</h2>
+      <div class="skills-container">
+        <!-- Langages -->
+        <div class="skill-card">
+          <i class="devicon-php-plain colored icon"></i>
+          <h3 class="skill-title">PHP (POO, Laravel)</h3>
+          <p class="skill-desc">Développement backend robuste, APIs, et applications web modernes avec PHP orienté objet et le framework Laravel.</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-flutter-plain colored icon"></i>
+          <h3 class="skill-title">Dart (Flutter)</h3>
+          <p class="skill-desc">Création d'applications mobiles et desktop performantes et multiplateformes avec Flutter et Dart.</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-kotlin-plain colored icon"></i>
+          <h3 class="skill-title">Kotlin</h3>
+          <p class="skill-desc">Développement d'applications mobiles Android modernes, robustes et performantes avec Kotlin, en tirant parti de la programmation orientée objet et fonctionnelle.</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-javascript-plain colored icon"></i>
+          <h3 class="skill-title">JavaScript (React)</h3>
+          <p class="skill-desc">Développement d'interfaces web dynamiques et interactives avec JavaScript moderne et React.</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-c-plain colored icon"></i>
+          <h3 class="skill-title">C / C++</h3>
+          <p class="skill-desc">Programmation système, algorithmes performants et applications natives avec C et C++.</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-vba-plain icon"></i>
+          <h3 class="skill-title">VBA</h3>
+          <p class="skill-desc">Automatisation de tâches et développement de macros pour la suite Microsoft Office.</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-java-plain colored icon"></i>
+          <h3 class="skill-title">Java (POO)</h3>
+          <p class="skill-desc">Développement d'applications robustes et évolutives en Java avec une forte maîtrise de la programmation orientée objet (POO), conception de classes, héritage, encapsulation et polymorphisme.</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-html5-plain colored icon"></i>
+          <h3 class="skill-title">HTML5</h3>
+          <p class="skill-desc">Structuration sémantique et accessibilité des pages web modernes.</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-css3-plain colored icon"></i>
+          <h3 class="skill-title">CSS3</h3>
+          <p class="skill-desc">Mise en forme avancée, animations et responsive design pour des interfaces élégantes.</p>
+        </div>
+        <!-- Bases de données -->
+        <div class="skill-card">
+          <i class="devicon-mysql-plain colored icon"></i>
+          <h3 class="skill-title">MySQL / MariaDB</h3>
+          <p class="skill-desc">Gestion de bases de données relationnelles, requêtes SQL optimisées et intégration avec le backend.</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-sqldeveloper-plain icon"></i>
+          <h3 class="skill-title">SQLite (Flutter)</h3>
+          <p class="skill-desc">Stockage local performant pour applications mobiles Flutter.</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-firebase-plain colored icon"></i>
+          <h3 class="skill-title">Firebase Firestore</h3>
+          <p class="skill-desc">Base de données NoSQL cloud pour synchronisation temps réel et applications mobiles/web.</p>
+        </div>
+        <!-- Outils -->
+        <div class="skill-card">
+          <i class="devicon-git-plain colored icon"></i>
+          <h3 class="skill-title">Git / GitHub</h3>
+          <p class="skill-desc">Gestion de version, collaboration et déploiement de projets via Git et GitHub.</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-figma-plain colored icon"></i>
+          <h3 class="skill-title">Figma</h3>
+          <p class="skill-desc">Conception d'interfaces UI/UX et prototypage rapide d'applications web et mobiles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects-section fade-in">
+    <div class="container">
+      <h2 class="section-title">Projets</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <i class="devicon-flutter-plain colored icon"></i>
+          <h3 class="project-title">CantEt.Parole</h3>
+          <p class="project-desc">Application Flutter pour chants gospel, navigation personnalisée et gestion dynamique.</p>
+          <div class="badges">
+            <span>Flutter</span>
+            <span>Firebase</span>
+            <span>SQLite</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <span style="display: flex; gap: 8px; align-items: center;">
+            <i class="devicon-kotlin-plain colored icon"></i>
+            <i class="ri-taxi-line icon project-icon"></i>
+            <i class="ri-map-pin-line icon project-icon"></i>
+          </span>
+          <h3 class="project-title">Gestion de Taximan</h3>
+          <p class="project-desc">Application mobile Android développée en Kotlin pour la gestion des chauffeurs de taxi, suivi des courses, gestion des paiements, et géolocalisation en temps réel. Interface moderne et notifications intégrées.</p>
+          <div class="badges">
+            <span>Kotlin</span>
+            <span>Android</span>
+            <span>Géolocalisation</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <span style="display: flex; gap: 8px; align-items: center;">
+            <i class="devicon-c-plain colored icon"></i>
+            <i class="ri-file-zip-line icon project-icon"></i>
+            <i class="ri-arrow-left-right-line icon project-icon"></i>
+          </span>
+          <h3 class="project-title">Compression & Décompression de Fichier</h3>
+          <p class="project-desc">Application en C++ permettant de compresser et décompresser des fichiers à l'aide d'algorithmes efficaces (ex : Huffman, LZW). Interface console intuitive, gestion des fichiers binaires et optimisation de l'espace disque.</p>
+          <div class="badges">
+            <span>C++</span>
+            <span>Algorithmes</span>
+            <span>Compression</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <span style="display: flex; gap: 8px; align-items: center;">
+            <i class="devicon-java-plain colored icon"></i>
+            <i class="ri-book-2-line icon project-icon"></i>
+            <i class="ri-layout-masonry-line icon project-icon"></i>
+          </span>
+          <h3 class="project-title">Gestion d'une bibliothèque</h3>
+          <p class="project-desc">Application de gestion d'une bibliothèque développée en Java avec interface graphique réalisée sous JavaFX et Scene Builder. Permet la gestion des livres, des emprunts, des retours et des utilisateurs avec une interface moderne et intuitive.</p>
+          <div class="badges">
+            <span>Java</span>
+            <span>JavaFX</span>
+            <span>Scene Builder</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <span style="display: flex; gap: 8px; align-items: center;">
+            <i class="devicon-nodejs-plain colored icon"></i>
+            <i class="devicon-mysql-plain colored icon"></i>
+            <i class="devicon-react-original colored icon"></i>
+            <i class="devicon-flutter-plain colored icon"></i>
+            <i class="ri-api-line icon"></i>
+          </span>
+          <h3 class="project-title">Location Immobilière</h3>
+          <p class="project-desc">Plateforme web + mobile + desktop pour gestion d'annonces et interactions bailleur-locataire.</p>
+          <div class="badges">
+            <span>Nodejs</span>
+            <span>MySQL</span>
+            <span>React</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <span style="display: flex; gap: 8px; align-items: center;">
+            <i class="devicon-nodejs-plain colored icon"></i>
+            <i class="devicon-mysql-plain colored icon"></i>
+            <i class="devicon-react-original colored icon"></i>
+            <i class="devicon-flutter-plain colored icon"></i>
+            <i class="ri-api-line icon"></i>
+          </span>
+          <h3 class="project-title">Site Web pour GospelChantEtParole</h3>
+          <p class="project-desc">Backend Application Flutter pour chants gospel, et site web pour administration.</p>
+          <div class="badges">
+            <span>Nodejs</span>
+            <span>MySQL</span>
+            <span>API REST</span>
+            <span>Flutter</span>
+            <span>React</span>
+            <span>Sqlite</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <span style="display: flex; gap: 8px; align-items: center;">
+            <i class="ri-water-flash-line icon project-icon"></i>
+            <i class="devicon-flutter-plain colored icon project-icon"></i>
+            <i class="devicon-firebase-plain colored icon project-icon"></i>
+            <i class="ri-global-line icon project-icon"></i>
+            <i class="ri-time-line icon project-icon"></i>
+            <i class="ri-api-line icon project-icon"></i>
+          </span>
+          <h3 class="project-title">SmartWaterSystem</h3>
+          <p class="project-desc">SmartWaterSystem est un système intelligent de gestion de l’eau qui permet de surveiller, contrôler et optimiser la distribution et la consommation d’eau dans différents environnements (résidentiel, industriel ou agricole). Grâce à des capteurs et à une interface numérique, le système fournit des données en temps réel sur le niveau d’eau, la pression, la qualité et les fuites, permettant ainsi une gestion efficace et durable des ressources en eau. Il peut aussi générer des alertes automatiques pour prévenir tout problème ou gaspillage.</p>
+          <div class="badges">
+            <span>Flutter</span>
+            <span>Firebase</span>
+            <span>Web</span>
+            <span>Temps réel</span>
+            <span>API</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+  <!-- Section Radar Graph déplacée ici -->
+  <section id="skills-radar" class="section">
+    <h2 class="section-title" data-translate="skills_radar_title">Compétences principales</h2>
+    <div class="radar-container">
+      <canvas id="radarChart" aria-label="Radar des compétences"></canvas>
+    </div>
+  </section>
+
+  
+
+  <footer class="footer" id="contact">
+    <div class="footer-content">
+  <div class="footer-socials">
+        <a href="tel:+243858924096" title="Appeler +243 858924096"><i class="ri-phone-line"></i></a>
+        <a href="mailto:joelmikejm519@gmail.com" title="Email"><i class="ri-mail-line"></i></a>
+        <a href="https://github.com/22mk294" target="_blank" title="GitHub"><i class="ri-github-fill"></i></a>
+        <a href="https://www.linkedin.com/in/jo%C3%ABl-mike-mukendi-2a091134a/" title="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+        <a href="https://wa.me/243858924096" target="_blank" title="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+        <a href="https://x.com/joelmike519" target="_blank" title="X (Twitter)"><i class="ri-twitter-x-line"></i></a>
+      </div>
+      <div class="footer-lang">
+        <label for="lang-select" class="lang-label">Langue :</label>
+  <span class="lang-flag" id="lang-flag-footer">🇫🇷</span>
+        <select id="lang-select" aria-label="Choisir la langue">
+          <option value="fr" selected>Français</option>
+          <option value="en">English</option>
+          <option value="es">Español</option>
+        </select>
+      </div>
+      <div class="footer-copyright">
+        © 2025 Joel Mike Mukendi – Tous droits réservés
+      </div>
+    </div>
+  </footer>
+
+  
+
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+// Radar chart skills data (modifiable)
+const radarLabels = [
+  'HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL', 'React', 'Laravel', 'Flutter', 'Kotlin', 'C', 'C++', 'Node.js', 'Java', 'VBA'
+];
+// Génère des valeurs aléatoires entre 6.5 et 8 (65% à 80%)
+function getRandomSkillValue() {
+  return Math.round((Math.random() * (8 - 6.5) + 6.5) * 10) / 10;
+}
+const radarData = radarLabels.map(label => {
+  if (["HTML", "CSS", "MySQL"].includes(label)) return 8.5;
+  if (label === "Flutter") return 9.5;
+  if (label === "Node.js") return 5.5;
+  if (label === "Kotlin") return 8.0;
+  if (label === "C++" || label === "C" || label === "React") return 6.5;
+  return getRandomSkillValue();
+});
+document.addEventListener('DOMContentLoaded', function() {
+  if (window.Chart) {
+    const canvas = document.getElementById('radarChart');
+    const ctx = canvas.getContext('2d');
+    // Couleur dynamique selon le thème
+    function getRadarLabelColor() {
+      return document.body.classList.contains('dark') ? '#f1f5ff' : '#6366f1';
+    }
+    function resizeRadarCanvas() {
+      // Largeur max = conteneur, hauteur = largeur (carré)
+      const container = canvas.parentElement;
+      const size = Math.min(container.offsetWidth, 420);
+      canvas.style.width = size + 'px';
+      canvas.style.height = size + 'px';
+      canvas.width = size;
+      canvas.height = size;
+    }
+    resizeRadarCanvas();
+    window.addEventListener('resize', resizeRadarCanvas);
+    const chart = new Chart(ctx, {
+      type: 'radar',
+      data: {
+        labels: radarLabels,
+        datasets: [{
+          label: 'Niveau',
+          data: radarData,
+          backgroundColor: 'rgba(99,102,241,0.2)',
+          borderColor: 'rgba(99,102,241,1)',
+          pointBackgroundColor: 'rgba(99,102,241,1)',
+          borderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          title: { display: false }
+        },
+        scales: {
+          r: {
+            angleLines: { color: '#e0e7ff' },
+            grid: { color: '#e0e7ff' },
+            pointLabels: {
+              color: getRadarLabelColor(),
+              font: { size: 18, weight: 'bold' }
+            },
+            min: 0, max: 10, ticks: { stepSize: 2, color: '#6366f1' }
+          }
+        }
+      }
+    });
+    // Met à jour la couleur des labels si le thème change
+    const observer = new MutationObserver(() => {
+      chart.options.scales.r.pointLabels.color = getRadarLabelColor();
+      chart.update();
+    });
+    observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+    window.radarChartInstance = chart;
+  }
+});
+// Ajout traduction du titre radar
+if (window.translations) {
+  window.translations.fr.skills_radar_title = 'Compétences principales';
+  window.translations.en.skills_radar_title = 'Main skills';
+  window.translations.es.skills_radar_title = 'Competencias principales';
+}
+// Synchronisation des sélecteurs de langue header/footer et drapeaux dynamiques
+function setLangSelects(val) {
+  document.getElementById('lang-select').value = val;
+  document.getElementById('lang-select-header').value = val;
+  updateLangFlags(val);
+}
+function updateLangFlags(val) {
+  const flags = { fr: '🇫🇷', en: '🇬🇧', es: '🇪🇸' };
+  document.getElementById('lang-flag-header').textContent = flags[val] || '🏳️';
+  document.getElementById('lang-flag-footer').textContent = flags[val] || '🏳️';
+}
+document.addEventListener('DOMContentLoaded', function() {
+  const langSelectFooter = document.getElementById('lang-select');
+  const langSelectHeader = document.getElementById('lang-select-header');
+  langSelectFooter.addEventListener('change', function(e) {
+    setLangSelects(e.target.value);
+    langSelectHeader.dispatchEvent(new Event('change'));
+  });
+  langSelectHeader.addEventListener('change', function(e) {
+    setLangSelects(e.target.value);
+    langSelectFooter.dispatchEvent(new Event('change'));
+  });
+  // Initialisation au chargement
+  updateLangFlags(langSelectHeader.value);
+});
+// Affichage de la mini photo de profil dans le header au scroll
+document.addEventListener('DOMContentLoaded', function() {
+  const headerPic = document.getElementById('headerProfilePic');
+  const profileSection = document.getElementById('profile');
+  function checkProfilePic() {
+    const rect = profileSection.getBoundingClientRect();
+    if (rect.bottom < 70) {
+      headerPic.style.display = 'inline-flex';
+    } else {
+      headerPic.style.display = 'none';
+    }
+  }
+  window.addEventListener('scroll', checkProfilePic);
+  checkProfilePic();
+});
+</script>
+
+  <script>
+(function() {
+    const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') {
+    document.body.classList.add('light-mode');
+    document.documentElement.classList.remove('dark');
+    document.body.classList.remove('dark');
+  } else {
+    // Par défaut, mode dark
+    document.body.classList.add('dark');
+    document.documentElement.classList.add('dark');
+    document.body.classList.remove('light-mode');
+    if (!savedTheme) {
+      localStorage.setItem('theme', 'dark');
+    }
+  }
+})();
+
+document.addEventListener('DOMContentLoaded', function() {
+    const switchBtn = document.getElementById('theme-switch');
+    const icon = switchBtn.querySelector('i');
+    const body = document.body;
+    const html = document.documentElement;
+    const menuToggle = document.getElementById('menu-toggle');
+    const navList = document.querySelector('.nav-list');
+
+    // Appliquer l'icône en fonction du thème
+    if (body.classList.contains('dark')) {
+        icon.classList.remove('ri-moon-line');
+        icon.classList.add('ri-sun-line');
+    } else {
+        icon.classList.remove('ri-sun-line');
+        icon.classList.add('ri-moon-line');
+    }
+
+    switchBtn.addEventListener('click', function() {
+        const isDark = body.classList.toggle('dark');
+        html.classList.toggle('dark', isDark);
+        body.classList.toggle('light-mode', !isDark);
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        icon.classList.toggle('ri-moon-line', !isDark);
+        icon.classList.toggle('ri-sun-line', isDark);
+    });
+
+    // Menu burger responsive
+    if (menuToggle && navList) {
+        menuToggle.addEventListener('click', function() {
+            navList.classList.toggle('open');
+        });
+        // Fermer le menu au clic sur un lien
+        navList.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navList.classList.remove('open');
+            });
+        });
+        // Fermer le menu si on clique en dehors
+        document.addEventListener('click', function(e) {
+            if (!navList.contains(e.target) && !menuToggle.contains(e.target)) {
+                navList.classList.remove('open');
+            }
+        });
+    }
+});
+</script>
+
+</body>
+<script>
+// Changement de langue (texte statique, sans traduction automatique)
+const translations = {
+  fr: {
+    // Menu et titres
+    'Profil': 'Profil',
+    'Compétences': 'Compétences',
+    'Projets': 'Projets',
+    'Contact': 'Contact',
+    'Compétences techniques': 'Compétences techniques',
+    'Points forts': 'Points forts',
+    'Langue :': 'Langue :',
+    'footer_copyright': '© 2025 Joel Mike Mukendi – Tous droits réservés',
+    // Profil
+    'Développeur Full-Stack & Multi-plateformes': 'Développeur Full-Stack & Multi-plateformes',
+    'Développement full-stack et multi-plateformes (web, mobile, desktop) avec une forte orientation backend, intégration API, et architecture logicielle claire.': 'Développement full-stack et multi-plateformes (web, mobile, desktop) avec une forte orientation backend, intégration API, et architecture logicielle claire.',
+    // Points forts
+    'Structuration complète de projet (analyse → conception → implémentation).': 'Structuration complète de projet (analyse → conception → implémentation).',
+    'Respect de l’architecture MVC.': 'Respect de l’architecture MVC.',
+    'Projets multi-plateformes réels.': 'Projets multi-plateformes réels.',
+    'Approche méthodique et progressive.': 'Approche méthodique et progressive.',
+    // Compétences
+    'PHP (POO, Laravel)': 'PHP (POO, Laravel)',
+    'Développement backend robuste, APIs, et applications web modernes avec PHP orienté objet et le framework Laravel.': 'Développement backend robuste, APIs, et applications web modernes avec PHP orienté objet et le framework Laravel.',
+    'Dart (Flutter)': 'Dart (Flutter)',
+    'Création d\'applications mobiles et desktop performantes et multiplateformes avec Flutter et Dart.': 'Création d\'applications mobiles et desktop performantes et multiplateformes avec Flutter et Dart.',
+    'Kotlin': 'Kotlin',
+    'Développement d\'applications mobiles Android modernes, robustes et performantes avec Kotlin, en tirant parti de la programmation orientée objet et fonctionnelle.': 'Développement d\'applications mobiles Android modernes, robustes et performantes avec Kotlin, en tirant parti de la programmation orientée objet et fonctionnelle.',
+    'JavaScript (React)': 'JavaScript (React)',
+    'Développement d\'interfaces web dynamiques et interactives avec JavaScript moderne et React.': 'Développement d\'interfaces web dynamiques et interactives avec JavaScript moderne et React.',
+    'C / C++': 'C / C++',
+    'Programmation système, algorithmes performants et applications natives avec C et C++.': 'Programmation système, algorithmes performants et applications natives avec C et C++.',
+    'VBA': 'VBA',
+    'Automatisation de tâches et développement de macros pour la suite Microsoft Office.': 'Automatisation de tâches et développement de macros pour la suite Microsoft Office.',
+    'Java (POO)': 'Java (POO)',
+    'Développement d\'applications robustes et évolutives en Java avec une forte maîtrise de la programmation orientée objet (POO), conception de classes, héritage, encapsulation et polymorphisme.': 'Développement d\'applications robustes et évolutives en Java avec une forte maîtrise de la programmation orientée objet (POO), conception de classes, héritage, encapsulation et polymorphisme.',
+    'HTML5': 'HTML5',
+    'Structuration sémantique et accessibilité des pages web modernes.': 'Structuration sémantique et accessibilité des pages web modernes.',
+    'CSS3': 'CSS3',
+    'Mise en forme avancée, animations et responsive design pour des interfaces élégantes.': 'Mise en forme avancée, animations et responsive design pour des interfaces élégantes.',
+    'MySQL / MariaDB': 'MySQL / MariaDB',
+    'Gestion de bases de données relationnelles, requêtes SQL optimisées et intégration avec le backend.': 'Gestion de bases de données relationnelles, requêtes SQL optimisées et intégration avec le backend.',
+    'SQLite (Flutter)': 'SQLite (Flutter)',
+    'Stockage local performant pour applications mobiles Flutter.': 'Stockage local performant pour applications mobiles Flutter.',
+    'Firebase Firestore': 'Firebase Firestore',
+    'Base de données NoSQL cloud pour synchronisation temps réel et applications mobiles/web.': 'Base de données NoSQL cloud pour synchronisation temps réel et applications mobiles/web.',
+    'Git / GitHub': 'Git / GitHub',
+    'Gestion de version, collaboration et déploiement de projets via Git et GitHub.': 'Gestion de version, collaboration et déploiement de projets via Git et GitHub.',
+    'Figma': 'Figma',
+    'Conception d\'interfaces UI/UX et prototypage rapide d\'applications web et mobiles.': 'Conception d\'interfaces UI/UX et prototypage rapide d\'applications web et mobiles.',
+    // Projets (badges inclus)
+    'Flutter': 'Flutter',
+    'Firebase': 'Firebase',
+    'SQLite': 'SQLite',
+    'Kotlin': 'Kotlin',
+    'Android': 'Android',
+    'Géolocalisation': 'Géolocalisation',
+    'C++': 'C++',
+    'Algorithmes': 'Algorithmes',
+    'Compression': 'Compression',
+    'Java': 'Java',
+    'JavaFX': 'JavaFX',
+    'Scene Builder': 'Scene Builder',
+    'Nodejs': 'Nodejs',
+    'MySQL': 'MySQL',
+    'React': 'React',
+    'API REST': 'API REST',
+    'Sqlite': 'Sqlite',
+    'Web': 'Web',
+    'Temps réel': 'Temps réel',
+    'API': 'API',
+    // Projets descriptions (exemple)
+    'Application Flutter pour chants gospel, navigation personnalisée et gestion dynamique.': 'Application Flutter pour chants gospel, navigation personnalisée et gestion dynamique.',
+    'Application mobile Android développée en Kotlin pour la gestion des chauffeurs de taxi, suivi des courses, gestion des paiements, et géolocalisation en temps réel. Interface moderne et notifications intégrées.': 'Application mobile Android développée en Kotlin pour la gestion des chauffeurs de taxi, suivi des courses, gestion des paiements, et géolocalisation en temps réel. Interface moderne et notifications intégrées.',
+    'Application en C++ permettant de compresser et décompresser des fichiers à l\'aide d\'algorithmes efficaces (ex : Huffman, LZW). Interface console intuitive, gestion des fichiers binaires et optimisation de l\'espace disque.': 'Application en C++ permettant de compresser et décompresser des fichiers à l\'aide d\'algorithmes efficaces (ex : Huffman, LZW). Interface console intuitive, gestion des fichiers binaires et optimisation de l\'espace disque.',
+    'Application de gestion d\'une bibliothèque développée en Java avec interface graphique réalisée sous JavaFX et Scene Builder. Permet la gestion des livres, des emprunts, des retours et des utilisateurs avec une interface moderne et intuitive.': 'Application de gestion d\'une bibliothèque développée en Java avec interface graphique réalisée sous JavaFX et Scene Builder. Permet la gestion des livres, des emprunts, des retours et des utilisateurs avec une interface moderne et intuitive.',
+    'Plateforme web + mobile + desktop pour gestion d\'annonces et interactions bailleur-locataire.': 'Plateforme web + mobile + desktop pour gestion d\'annonces et interactions bailleur-locataire.',
+    'Backend Application Flutter pour chants gospel, et site web pour administration.': 'Backend Application Flutter pour chants gospel, et site web pour administration.',
+    'SmartWaterSystem est un système intelligent de gestion de l’eau qui permet de surveiller, contrôler et optimiser la distribution et la consommation d’eau dans différents environnements (résidentiel, industriel ou agricole). Grâce à des capteurs et à une interface numérique, le système fournit des données en temps réel sur le niveau d’eau, la pression, la qualité et les fuites, permettant ainsi une gestion efficace et durable des ressources en eau. Il peut aussi générer des alertes automatiques pour prévenir tout problème ou gaspillage.': 'SmartWaterSystem est un système intelligent de gestion de l’eau qui permet de surveiller, contrôler et optimiser la distribution et la consommation d’eau dans différents environnements (résidentiel, industriel ou agricole). Grâce à des capteurs et à une interface numérique, le système fournit des données en temps réel sur le niveau d’eau, la pression, la qualité et les fuites, permettant ainsi une gestion efficace et durable des ressources en eau. Il peut aussi générer des alertes automatiques pour prévenir tout problème ou gaspillage.'
+  },
+  en: {
+    // Menu et titres
+    'Profil': 'Profile',
+    'Compétences': 'Skills',
+    'Projets': 'Projects',
+    'Contact': 'Contact',
+    'Compétences techniques': 'Technical Skills',
+    'Points forts': 'Highlights',
+    'Langue :': 'Language:',
+    'footer_copyright': '© 2025 Joel Mike Mukendi – All rights reserved',
+    // Profil
+    'Développeur Full-Stack & Multi-plateformes': 'Full-Stack & Cross-platform Developer',
+    'Développement full-stack et multi-plateformes (web, mobile, desktop) avec une forte orientation backend, intégration API, et architecture logicielle claire.': 'Full-stack and cross-platform development (web, mobile, desktop) with strong backend focus, API integration, and clear software architecture.',
+    // Points forts
+    'Structuration complète de projet (analyse → conception → implémentation).': 'Complete project structuring (analysis → design → implementation).',
+    'Respect de l’architecture MVC.': 'Respect for MVC architecture.',
+    'Projets multi-plateformes réels.': 'Real cross-platform projects.',
+    'Approche méthodique et progressive.': 'Methodical and progressive approach.',
+    // Compétences
+    'PHP (POO, Laravel)': 'PHP (OOP, Laravel)',
+    'Développement backend robuste, APIs, et applications web modernes avec PHP orienté objet et le framework Laravel.': 'Robust backend development, APIs, and modern web apps with object-oriented PHP and Laravel framework.',
+    'Dart (Flutter)': 'Dart (Flutter)',
+    'Création d\'applications mobiles et desktop performantes et multiplateformes avec Flutter et Dart.': 'Building high-performance, cross-platform mobile and desktop apps with Flutter and Dart.',
+    'Kotlin': 'Kotlin',
+    'Développement d\'applications mobiles Android modernes, robustes et performantes avec Kotlin, en tirant parti de la programmation orientée objet et fonctionnelle.': 'Modern, robust, and high-performance Android mobile app development with Kotlin, leveraging OOP and functional programming.',
+    'JavaScript (React)': 'JavaScript (React)',
+    'Développement d\'interfaces web dynamiques et interactives avec JavaScript moderne et React.': 'Development of dynamic and interactive web interfaces with modern JavaScript and React.',
+    'C / C++': 'C / C++',
+    'Programmation système, algorithmes performants et applications natives avec C et C++.': 'System programming, high-performance algorithms, and native apps with C and C++.',
+    'VBA': 'VBA',
+    'Automatisation de tâches et développement de macros pour la suite Microsoft Office.': 'Task automation and macro development for Microsoft Office suite.',
+    'Java (POO)': 'Java (OOP)',
+    'Développement d\'applications robustes et évolutives en Java avec une forte maîtrise de la programmation orientée objet (POO), conception de classes, héritage, encapsulation et polymorphisme.': 'Robust and scalable application development in Java with strong OOP skills: class design, inheritance, encapsulation, and polymorphism.',
+    'HTML5': 'HTML5',
+    'Structuration sémantique et accessibilité des pages web modernes.': 'Semantic structuring and accessibility of modern web pages.',
+    'CSS3': 'CSS3',
+    'Mise en forme avancée, animations et responsive design pour des interfaces élégantes.': 'Advanced styling, animations, and responsive design for elegant interfaces.',
+    'MySQL / MariaDB': 'MySQL / MariaDB',
+    'Gestion de bases de données relationnelles, requêtes SQL optimisées et intégration avec le backend.': 'Relational database management, optimized SQL queries, and backend integration.',
+    'SQLite (Flutter)': 'SQLite (Flutter)',
+    'Stockage local performant pour applications mobiles Flutter.': 'High-performance local storage for Flutter mobile apps.',
+    'Firebase Firestore': 'Firebase Firestore',
+    'Base de données NoSQL cloud pour synchronisation temps réel et applications mobiles/web.': 'Cloud NoSQL database for real-time sync and mobile/web apps.',
+    'Git / GitHub': 'Git / GitHub',
+    'Gestion de version, collaboration et déploiement de projets via Git et GitHub.': 'Version control, collaboration, and project deployment via Git and GitHub.',
+    'Figma': 'Figma',
+    'Conception d\'interfaces UI/UX et prototypage rapide d\'applications web et mobiles.': 'UI/UX design and rapid prototyping for web and mobile apps.',
+    // Projets (badges inclus)
+    'Flutter': 'Flutter',
+    'Firebase': 'Firebase',
+    'SQLite': 'SQLite',
+    'Kotlin': 'Kotlin',
+    'Android': 'Android',
+    'Géolocalisation': 'Geolocation',
+    'C++': 'C++',
+    'Algorithmes': 'Algorithms',
+    'Compression': 'Compression',
+    'Java': 'Java',
+    'JavaFX': 'JavaFX',
+    'Scene Builder': 'Scene Builder',
+    'Nodejs': 'Nodejs',
+    'MySQL': 'MySQL',
+    'React': 'React',
+    'API REST': 'REST API',
+    'Sqlite': 'Sqlite',
+    'Web': 'Web',
+    'Temps réel': 'Real-time',
+    'API': 'API',
+    // Projets descriptions
+    'Application Flutter pour chants gospel, navigation personnalisée et gestion dynamique.': 'Flutter app for gospel songs, custom navigation, and dynamic management.',
+    'Application mobile Android développée en Kotlin pour la gestion des chauffeurs de taxi, suivi des courses, gestion des paiements, et géolocalisation en temps réel. Interface moderne et notifications intégrées.': 'Android mobile app in Kotlin for taxi driver management, ride tracking, payments, and real-time geolocation. Modern UI and integrated notifications.',
+    'Application en C++ permettant de compresser et décompresser des fichiers à l\'aide d\'algorithmes efficaces (ex : Huffman, LZW). Interface console intuitive, gestion des fichiers binaires et optimisation de l\'espace disque.': 'C++ app for file compression and decompression using efficient algorithms (e.g., Huffman, LZW). Intuitive console UI, binary file handling, and disk space optimization.',
+    'Application de gestion d\'une bibliothèque développée en Java avec interface graphique réalisée sous JavaFX et Scene Builder. Permet la gestion des livres, des emprunts, des retours et des utilisateurs avec une interface moderne et intuitive.': 'Library management app in Java with GUI built using JavaFX and Scene Builder. Manages books, loans, returns, and users with a modern, intuitive interface.',
+    'Plateforme web + mobile + desktop pour gestion d\'annonces et interactions bailleur-locataire.': 'Web + mobile + desktop platform for managing listings and landlord-tenant interactions.',
+    'Backend Application Flutter pour chants gospel, et site web pour administration.': 'Flutter backend app for gospel songs, and web admin site.',
+    'SmartWaterSystem est un système intelligent de gestion de l’eau qui permet de surveiller, contrôler et optimiser la distribution et la consommation d’eau dans différents environnements (résidentiel, industriel ou agricole). Grâce à des capteurs et à une interface numérique, le système fournit des données en temps réel sur le niveau d’eau, la pression, la qualité et les fuites, permettant ainsi une gestion efficace et durable des ressources en eau. Il peut aussi générer des alertes automatiques pour prévenir tout problème ou gaspillage.': 'SmartWaterSystem is an intelligent water management system for monitoring, controlling, and optimizing water distribution and consumption in various environments (residential, industrial, or agricultural). Sensors and a digital interface provide real-time data on water level, pressure, quality, and leaks, enabling efficient and sustainable resource management. It can also generate automatic alerts to prevent issues or waste.'
+  },
+  es: {
+    // Menu et titres
+    'Profil': 'Perfil',
+    'Compétences': 'Competencias',
+    'Projets': 'Proyectos',
+    'Contact': 'Contacto',
+    'Compétences techniques': 'Competencias técnicas',
+    'Points forts': 'Puntos fuertes',
+    'Langue :': 'Idioma:',
+    'footer_copyright': '© 2025 Joel Mike Mukendi – Todos los derechos reservados',
+    // Profil
+    'Développeur Full-Stack & Multi-plateformes': 'Desarrollador Full-Stack y Multiplataforma',
+    'Développement full-stack et multi-plateformes (web, mobile, desktop) avec une forte orientation backend, intégration API, et architecture logicielle claire.': 'Desarrollo full-stack y multiplataforma (web, móvil, escritorio) con fuerte enfoque backend, integración de API y arquitectura de software clara.',
+    // Points forts
+    'Structuration complète de projet (analyse → conception → implémentation).': 'Estructuración completa de proyectos (análisis → diseño → implementación).',
+    'Respect de l’architecture MVC.': 'Respeto de la arquitectura MVC.',
+    'Projets multi-plateformes réels.': 'Proyectos multiplataforma reales.',
+    'Approche méthodique et progressive.': 'Enfoque metódico y progresivo.',
+    // Compétences
+    'PHP (POO, Laravel)': 'PHP (POO, Laravel)',
+    'Développement backend robuste, APIs, et applications web modernes avec PHP orienté objet et le framework Laravel.': 'Desarrollo backend robusto, APIs y aplicaciones web modernas con PHP orientado a objetos y el framework Laravel.',
+    'Dart (Flutter)': 'Dart (Flutter)',
+    'Création d\'applications mobiles et desktop performantes et multiplateformes avec Flutter et Dart.': 'Creación de aplicaciones móviles y de escritorio multiplataforma y de alto rendimiento con Flutter y Dart.',
+    'Kotlin': 'Kotlin',
+    'Développement d\'applications mobiles Android modernes, robustes et performantes avec Kotlin, en tirant parti de la programmation orientée objet et fonctionnelle.': 'Desarrollo de aplicaciones móviles Android modernas, robustas y de alto rendimiento con Kotlin, aprovechando la programación orientada a objetos y funcional.',
+    'JavaScript (React)': 'JavaScript (React)',
+    'Développement d\'interfaces web dynamiques et interactives avec JavaScript moderne et React.': 'Desarrollo de interfaces web dinámicas e interactivas con JavaScript moderno y React.',
+    'C / C++': 'C / C++',
+    'Programmation système, algorithmes performants et applications natives avec C et C++.': 'Programación de sistemas, algoritmos de alto rendimiento y aplicaciones nativas con C y C++.',
+    'VBA': 'VBA',
+    'Automatisation de tâches et développement de macros pour la suite Microsoft Office.': 'Automatización de tareas y desarrollo de macros para la suite Microsoft Office.',
+    'Java (POO)': 'Java (POO)',
+    'Développement d\'applications robustes et évolutives en Java avec une forte maîtrise de la programmation orientée objet (POO), conception de classes, héritage, encapsulation et polymorphisme.': 'Desarrollo de aplicaciones robustas y escalables en Java con gran dominio de la programación orientada a objetos (POO), diseño de clases, herencia, encapsulación y polimorfismo.',
+    'HTML5': 'HTML5',
+    'Structuration sémantique et accessibilité des pages web modernes.': 'Estructuración semántica y accesibilidad de páginas web modernas.',
+    'CSS3': 'CSS3',
+    'Mise en forme avancée, animations et responsive design pour des interfaces élégantes.': 'Estilización avanzada, animaciones y diseño responsivo para interfaces elegantes.',
+    'MySQL / MariaDB': 'MySQL / MariaDB',
+    'Gestion de bases de données relationnelles, requêtes SQL optimisées et intégration avec le backend.': 'Gestión de bases de datos relacionales, consultas SQL optimizadas e integración con el backend.',
+    'SQLite (Flutter)': 'SQLite (Flutter)',
+    'Stockage local performant pour applications mobiles Flutter.': 'Almacenamiento local de alto rendimiento para aplicaciones móviles Flutter.',
+    'Firebase Firestore': 'Firebase Firestore',
+    'Base de données NoSQL cloud pour synchronisation temps réel et applications mobiles/web.': 'Base de datos NoSQL en la nube para sincronización en tiempo real y aplicaciones móviles/web.',
+    'Git / GitHub': 'Git / GitHub',
+    'Gestion de version, collaboration et déploiement de projets via Git et GitHub.': 'Gestión de versiones, colaboración y despliegue de proyectos con Git y GitHub.',
+    'Figma': 'Figma',
+    'Conception d\'interfaces UI/UX et prototypage rapide d\'applications web et mobiles.': 'Diseño de interfaces UI/UX y prototipado rápido de aplicaciones web y móviles.',
+    // Projets (badges inclus)
+    'Flutter': 'Flutter',
+    'Firebase': 'Firebase',
+    'SQLite': 'SQLite',
+    'Kotlin': 'Kotlin',
+    'Android': 'Android',
+    'Géolocalisation': 'Geolocalización',
+    'C++': 'C++',
+    'Algorithmes': 'Algoritmos',
+    'Compression': 'Compresión',
+    'Java': 'Java',
+    'JavaFX': 'JavaFX',
+    'Scene Builder': 'Scene Builder',
+    'Nodejs': 'Nodejs',
+    'MySQL': 'MySQL',
+    'React': 'React',
+    'API REST': 'API REST',
+    'Sqlite': 'Sqlite',
+    'Web': 'Web',
+    'Temps réel': 'Tiempo real',
+    'API': 'API',
+    // Projets descriptions
+    'Application Flutter pour chants gospel, navigation personnalisée et gestion dynamique.': 'Aplicación Flutter para cantos gospel, navegación personalizada y gestión dinámica.',
+    'Application mobile Android développée en Kotlin pour la gestion des chauffeurs de taxi, suivi des courses, gestion des paiements, et géolocalisation en temps réel. Interface moderne et notifications intégrées.': 'Aplicación móvil Android desarrollada en Kotlin para la gestión de taxistas, seguimiento de viajes, gestión de pagos y geolocalización en tiempo real. Interfaz moderna y notificaciones integradas.',
+    'Application en C++ permettant de compresser et décompresser des fichiers à l\'aide d\'algorithmes efficaces (ex : Huffman, LZW). Interface console intuitive, gestion des fichiers binaires et optimisation de l\'espace disque.': 'Aplicación en C++ para comprimir y descomprimir archivos usando algoritmos eficientes (ej: Huffman, LZW). Interfaz de consola intuitiva, gestión de archivos binarios y optimización del espacio en disco.',
+    'Application de gestion d\'une bibliothèque développée en Java avec interface graphique réalisée sous JavaFX et Scene Builder. Permet la gestion des livres, des emprunts, des retours et des utilisateurs avec une interface moderne et intuitive.': 'Aplicación de gestión de biblioteca desarrollada en Java con interfaz gráfica realizada en JavaFX y Scene Builder. Permite la gestión de libros, préstamos, devoluciones y usuarios con una interfaz moderna e intuitiva.',
+    'Plateforme web + mobile + desktop pour gestion d\'annonces et interactions bailleur-locataire.': 'Plataforma web + móvil + escritorio para la gestión de anuncios e interacciones arrendador-inquilino.',
+    'Backend Application Flutter pour chants gospel, et site web pour administration.': 'Aplicación backend Flutter para cantos gospel y sitio web para administración.',
+    'SmartWaterSystem est un système intelligent de gestion de l’eau qui permet de surveiller, contrôler et optimiser la distribution et la consommation d’eau dans différents environnements (résidentiel, industriel ou agricole). Grâce à des capteurs et à une interface numérique, le système fournit des données en temps réel sur le niveau d’eau, la pression, la qualité et les fuites, permettant ainsi une gestion efficace et durable des ressources en eau. Il peut aussi générer des alertes automatiques pour prévenir tout problème ou gaspillage.': 'SmartWaterSystem es un sistema inteligente de gestión del agua que permite monitorear, controlar y optimizar la distribución y el consumo de agua en diferentes entornos (residencial, industrial o agrícola). Gracias a sensores y una interfaz digital, el sistema proporciona datos en tiempo real sobre el nivel de agua, presión, calidad y fugas, permitiendo una gestión eficiente y sostenible de los recursos hídricos. También puede generar alertas automáticas para prevenir cualquier problema o desperdicio.'
+  }
+};
+
+document.getElementById('lang-select').addEventListener('change', function(e) {
+  const lang = e.target.value;
+  // Menu
+  document.querySelectorAll('.nav-list a').forEach(a => {
+    const key = a.textContent.trim();
+    if (translations[lang][key]) a.textContent = translations[lang][key];
+  });
+  // Section titres
+  document.querySelectorAll('.section-title').forEach(el => {
+    const key = el.textContent.trim();
+    if (translations[lang][key]) el.textContent = translations[lang][key];
+  });
+  // Titres et descriptions profil
+  document.querySelectorAll('.profile-special, .profile-desc').forEach(el => {
+    const key = el.textContent.trim();
+    if (translations[lang][key]) el.textContent = translations[lang][key];
+  });
+  // Points forts
+  document.querySelectorAll('.profil-points li').forEach(el => {
+    const key = el.textContent.trim();
+    if (translations[lang][key]) el.childNodes[1].nodeValue = ' ' + translations[lang][key];
+  });
+  // Titres compétences
+  document.querySelectorAll('.skill-title').forEach(el => {
+    const key = el.textContent.trim();
+    if (translations[lang][key]) el.textContent = translations[lang][key];
+  });
+  // Descriptions compétences
+  document.querySelectorAll('.skill-desc').forEach(el => {
+    const key = el.textContent.trim();
+    if (translations[lang][key]) el.textContent = translations[lang][key];
+  });
+  // Titres projets
+  document.querySelectorAll('.project-title').forEach(el => {
+    const key = el.textContent.trim();
+    if (translations[lang][key]) el.textContent = translations[lang][key];
+  });
+  // Descriptions projets
+  document.querySelectorAll('.project-desc').forEach(el => {
+    const key = el.textContent.trim();
+    if (translations[lang][key]) el.textContent = translations[lang][key];
+  });
+  // Badges projets
+  document.querySelectorAll('.badges span').forEach(el => {
+    const key = el.textContent.trim();
+    if (translations[lang][key]) el.textContent = translations[lang][key];
+  });
+  // Copyright
+  const copyright = document.querySelector('.footer-copyright');
+  if (copyright) copyright.textContent = translations[lang]['footer_copyright'] || copyright.textContent;
+  // Label langue
+  const label = document.querySelector('.footer-lang label');
+  if (label) label.textContent = translations[lang]['Langue :'] || 'Langue :';
+});
+</script>
+</html>
